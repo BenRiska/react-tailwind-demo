@@ -6,6 +6,13 @@ module.exports = {
       "md": "760px",
       "lg": "1200px"
     },
+    maxHeight: {
+      '120': '28rem',
+     },
+    maxWidth: {
+      "half": "50%",
+      "1200": "1200px"
+    },
     extend: {},
   },
   variants: {

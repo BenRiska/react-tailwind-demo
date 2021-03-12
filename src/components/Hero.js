@@ -3,31 +3,36 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <div className='bg-white h-screen flex flex-col justify-center items-center'>
-      <h1 className='lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14'>
-        EGGCELLENT
-      </h1>
-      <Link
-        className='py-6 px-10 bg-yellow-500 rounded-full text-3xl hover:bg-yellow-300 transition duration-300 ease-in-out flex items-center animate-bounce'
-        to='/menu'
-      >
-        Order Now{' '}
-        <svg
-          className='w-6 h-6 ml-4'
-          fill='none'
-          stroke='currentColor'
-          viewBox='0 0 24 24'
-          xmlns='http://www.w3.org/2000/svg'
-        >
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            strokeWidth={2}
-            d='M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z'
-          />
-        </svg>
-      </Link>
-    </div>
+        <div className='flex max-w-1200 p-4 mx-auto space-x-2 items-center mt-8'>
+          <div className="flex-grow md:block flex flex-col items-center">
+              <h1 className="mt-12 text-center md:text-left">
+                <span className="text-5xl block font-bold mb-2">Full package, fuss-free</span>
+                <span className="text-5xl block font-bold">accounting for £39/month</span>
+              </h1>
+              <ul className="mt-8 space-y-3">
+                <li className="flex space-x-3">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="10.5" fill="#00b67a"></circle><path d="M15.2072 7.96484L9.2331 13.7579L6.51758 11.1247" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span className="font-light text-lg">Real-time accounting you'll actually understand.</span>
+                </li>
+                <li className="flex space-x-3">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="10.5" fill="#00b67a"></circle><path d="M15.2072 7.96484L9.2331 13.7579L6.51758 11.1247" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span className="font-light text-lg">All of your taxes optimised and filed with HMRC.</span>
+                </li>
+                <li className="flex space-x-3">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10.5" cy="10.5" r="10.5" fill="#00b67a"></circle><path d="M15.2072 7.96484L9.2331 13.7579L6.51758 11.1247" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <span className="font-light text-lg">Unlimited accounting and tax support from our team of experts</span>
+                </li>
+              </ul>
+              <div className="flex space-x-4 mt-8">
+                <button className="py-4 px-8 font-bold bg-red-400 text-white rounded">Try 1 month free</button>
+                <button className="py-4 px-8 bg-gray-100 font-bold rounded">Book a demo</button>
+              </div>
+              <p className="text-sm mt-3">
+                It only takes <strong>5 minutes</strong> to switch from your existing system. No credit card required.
+              </p>
+          </div>
+          <img className="max-h-120 md:block object-contain max-w-half hidden" src="https://images.prismic.io/ember-bank/0b20b735-1bd3-4db1-accc-cdd66834baf7_Group+155.png?auto=compress,format&height=970" alt="hero display"/>
+        </div>
     )
 }
 

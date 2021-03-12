@@ -5,7 +5,7 @@ import emberLogo from "../images/ember.svg"
 const Navbar = () => {
     return (
         <nav
-      className='container mx-auto flex justify-between items-center h-20 bg-white text-black relative'
+      className='container mx-auto flex justify-between items-center h-20 bg-white text-black relative p-2'
       role='navigation'
     >
       <div className="flex justify-between items-center">
